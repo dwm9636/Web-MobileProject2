@@ -94,7 +94,6 @@
 }
 h1 {font-size: 22px;}
 body {background-color: #a0b6c5; font-size: 0.65rem;}
-#apple_pic img{width: 30%;}
 
 /* has not been changed */
 /* for tablet: */
@@ -105,7 +104,6 @@ body {background-color: #a0b6c5; font-size: 0.65rem;}
     .col-tablet-4 {width: 100%;}
     h1 {font-size: 28px;}
     body {background-color: #ffffff; font-size: 0.80rem;}
-    #apple_pic img{width: 50%;}
 }
 
 /* has not been changed */
@@ -117,5 +115,4 @@ body {background-color: #a0b6c5; font-size: 0.65rem;}
     .col-desktop-4 {width: 100%;}
     h1 {font-size: 34px;}
     body {background-color: #e8f5fc; font-size: 1rem;}
-    #apple_pic img{width: 70%;}
 }
