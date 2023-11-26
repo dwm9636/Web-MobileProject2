@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web page about the history of web design">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Web Design, History of Web Design, Design, Browsers, History, ">
+        <meta name="author" content="Nathan Skomo and Dean Maxwell">
+        <title>A History of Web Design</title>
+        <!-- External CSS file link -->
+        <link rel="stylesheet" href="assets/CSS/style.css">
+        <!-- Internal CSS -->
+        <style>
+            /* body {font-family: "Lucid Sans", sans-serif;} */
+            /* The box-sizing CSS property makes sure that ALL elements are sized the same */
+            /* * {box-sizing: border-box;} */
+            /* dt {font-weight: bold;} */
+        </style>
+    </head>
+    <body>
+        <!-- heder will take up 100% of the screen width in mobile, tablets, and desktop/laptop -->
+        <div id="header">
+            <h1>How does the Web Work?</h1>
+        </div> <!-- header closing -->
+
+        <!-- for laptop/desktop: 1+2+1 columns which are menu + content + aside -->
+
+        <!-- for tablets, you can create content BUT the tablet will convert it into TWO rows
+        row1: 1+3 columns (menu + content) and row2: 4 columns (aside)-->
+
+        <div id="content">
+
+            <div class="col-desktop-1 col-tablet-1 menu"> <!-- class has 3 names -->
+                <!-- Change the names of linked pages before submitting -->
+                <a href="index.html">Home</a>
+                <a href="browser_wars.html">Browser Wars</a>
+                <a href="lorem.html">Lorem Ipsum</a>
+                <a href="web_works.html">Interent Inner Workings</a>
+                <a href="references.html">References</a>
+            </div>
+
+            <div class="col-desktop-2 col-tablet-3 main"> <!-- clas has 3 names --> 
+                <!-- Introduction -->
+               <h3>How you get here?</h3>
+               <p>
+                    You most likly got here by typing a url into your browser. I you are like the majority of people
+                    you probaly used <a href="https://www.google.com">Google</a> or another browser if you want to feel different,
+                    but all when you use a URL they are all resolved in the same way. Weather you use <a href="https://www.google.com">Google</a>
+                    or <a href="https://www.firefox.com">Fire Fox</a> to look up your favorite <a href="https://www.edietshop.com/dehydrated-water/">website</a> they 
+                    all turn the url into an IP adrress.
+               </p>
+               <h3>What is an IP address?</h3>
+               <h4>Note the following is only true for IPv4 not IPv6 or any future versions</h4>
+               <p>
+                An IP is a string of 4 values ranging from 0 to 255. An example IP address would be 127.0.0.1. Each computer connected to the internet has an 
+                IP address, including the servers that host websites. Ip addresses are important because computers 
+                do not understand URLs and therefore need URLs to be converted into IP addresses. Bonus fact: 
+                Routers have their own protocols to find computers based on their IP address, but that is out of 
+                scope for this content. 
+               </p>
+
+               <h3>How you URLs Turn into IP Addresses</h3>
+               <p>
+                First off, after the url is typed in your browser the browser will check its local URL to IP 
+                address cache and your computer will also check its own cache. These caches are local and are based 
+                on previous URL lookups. If the URL you typed in is not in either of these caches then your 
+                computer will send out a DNS (Domain Name system) request to its local name server.
+               </p>
+               <img src="assets/media/graphics/dns-lookup-diagram.webp" height="50%" width="50%">
+               <p>
+                The local DNS server is usually your ISP’s (Internet Server Provider) name server or Google’s name 
+                server. This server also has a cache of URLs to IPs and will return the IP address to you if it is 
+                in the cache. If this is not in the Cache or in any records it will send the request to the 
+                TLD(Top Level Domain) name server. A TLD is .com, .net, .uk, or .ae.  This TLD name server will 
+                then send another name server that should know the IP address or be closer to the server that does 
+                know the  IP address to the ISP name server. The ISP will then send a request to the name server 
+                provided to the ISP’s name server. One of 3 things could happen.
+               </p>
+               <ul>
+                <li>1. The server could know the IP address and send it to the ISP name server</li>
+                <li>
+                    2. The server could not know the IP address and then it could send the request to the next name 
+                    server until an IP address is returned and then send this IP address to the name server that 
+                    sent the request to it.
+                </li>
+                <li>
+                    3. The server could not know the IP address and return another name server to the name server 
+                    that sent the request. It will then be the job of the original name server to send the request 
+                    to the newly provided name server.
+                </li>
+               </ul>
+               <p>
+                Step 2 and 3 will repeat until the IP address is returned to the computer that sent the request. 
+                Once the IP address is returned to the computer the computer will then send the ip request to its 
+                router and the router will handle it from there.
+               </p>
+            </div>
+
+        </div> <!-- Closing Content Div -->
+
+        <!-- ---------------------------------- -->
+
+        <div id="footer">
+            <p>&copy; Copyright 2023 - <a href="dwm9636@rit.edu">Email us</a></p>
+            <p>Written By Den Maxwell and Nathan Skomo</p>
+        </div> <!-- Closing Footer div -->
+
+    </body>
+</html>
