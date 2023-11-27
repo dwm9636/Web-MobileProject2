@@ -93,7 +93,7 @@
     width: 100%; /* all elements take 100% size */
 }
 h1 {font-size: 22px;}
-body {background-color: #a0b6c5; font-size: 0.65rem;}
+body {background-color: #a0b6c5; }
 
 /* has not been changed */
 /* for tablet: */
@@ -103,7 +103,7 @@ body {background-color: #a0b6c5; font-size: 0.65rem;}
     .col-tablet-3 {width: 75%;}
     .col-tablet-4 {width: 100%;}
     h1 {font-size: 28px;}
-    body {background-color: #ffffff; font-size: 0.80rem;}
+    body {background-color: #ffffff;}
 }
 
 /* has not been changed */
@@ -114,5 +114,5 @@ body {background-color: #a0b6c5; font-size: 0.65rem;}
     .col-desktop-3 {width: 75%;}
     .col-desktop-4 {width: 100%;}
     h1 {font-size: 34px;}
-    body {background-color: #e8f5fc; font-size: 1rem;}
+    body {background-color: #e8f5fc;}
 }
