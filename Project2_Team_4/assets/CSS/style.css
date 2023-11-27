@@ -1,6 +1,6 @@
 /* has not been changed */
 #header {
-    background-color: #e5e5e5;
+    background-color: #6fb3b8;
     color: #383737;
     padding: 5%;
     text-align: center;
@@ -10,14 +10,14 @@
 .menu a {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #e5e5e5;
-    color: #32526a;
+    background-color: #6fb3b8;
+    color: #C2EDCE;
     display: block; /* verticle hyperlinks - for horizontal display: inline */
 }
 
 /* has not been changed */
 .menu a:hover {
-    background-color: #678ca7;
+    background-color: #C2EDCE;
     color: bisque;
 }
 
@@ -61,8 +61,8 @@
 
 /* has not been changed */
 #footer {
-    background-color: #728c9e;
-    color: bisque;
+    background-color: #6fb3b8;
+    color: #383737;
     text-align: center;
     font-size: 12px;
     padding: 15px;
@@ -71,7 +71,7 @@
 /* has not been changed */
 #footer a {
     text-decoration: none;
-    color: #32526a;
+    color: bisque;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@
     width: 100%; /* all elements take 100% size */
 }
 h1 {font-size: 22px;}
-body {background-color: #a0b6c5; }
+body {background-color: #BADFE7;}
 
 /* has not been changed */
 /* for tablet: */
@@ -114,5 +114,5 @@ body {background-color: #a0b6c5; }
     .col-desktop-3 {width: 70%;}
     .col-desktop-4 {width: 100%;}
     h1 {font-size: 34px;}
-    body {background-color: #e8f5fc;}
+    body {background-color: #F6F6F2;}
 }
